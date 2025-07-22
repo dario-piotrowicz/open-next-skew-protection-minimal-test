@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
-		"build": "next build",
+		"build": "VERCEL=1 next build",
 		"build:default": "next build",
 		"start": "next start",
 		"lint": "next lint",

@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    deploymentId: getDeploymentId(),
+    deploymentId: process.env.VERCEL ? undefined : getDeploymentId(),
 };
 
 export default nextConfig;
